@@ -1,6 +1,6 @@
 # Intro-to-SE, created by Jimmy on Oct 9 11:23
 
-Introduction to Software Engineering 
+Introduction to Software Engineering, 20201 HUST
 
 This Week(4, GUI)
 
