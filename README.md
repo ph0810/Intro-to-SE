@@ -1,13 +1,17 @@
 # Intro-to-SE, created by Jimmy on Oct 9 11:23
 
+Introduction to Software Engineering 
+
 This Week(4, GUI)
 
-Introduction to Software Engineering 
+![Preview image](/Preview Images/Login.png)
+
+![Preview image](/Preview Images/Users.png)
 
 Keep the username and password text field blank and login to the table view,
 if you try to fill in you can get an unexpected error (did not test the mysql database yet)
 
-**References**
+## References
 
   - https://www.youtube.com/watch?v=DH3dWzmkT5Y
   
