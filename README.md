@@ -4,9 +4,9 @@ Introduction to Software Engineering
 
 This Week(4, GUI)
 
-![Preview image](/Preview Images/Login.png)
+![Preview image](/Preview%20Images/Login.png)
 
-![Preview image](/Preview Images/Users.png)
+![Preview image](/Preview%20Images/Users.png)
 
 Keep the username and password text field blank and login to the table view,
 if you try to fill in you can get an unexpected error (did not test the mysql database yet)
