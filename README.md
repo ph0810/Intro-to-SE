@@ -10,6 +10,7 @@ if you try to fill in you can get an unexpected error (did not test the mysql da
 **References**
 
   - https://www.youtube.com/watch?v=DH3dWzmkT5Y
+  
     For those who know about Database you can go a head, create a table and interact with
     the database, watch from '31:32   MySQL Workbench - Creating new table and inserting record'  
   - https://www.youtube.com/watch?v=A5fQbsJ-iF8&t=930s
