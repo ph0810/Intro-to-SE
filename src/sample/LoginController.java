@@ -1,5 +1,8 @@
 package sample;
 
+import javafx.concurrent.Task;
+import javafx.concurrent.WorkerStateEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -40,28 +43,55 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        File brandingFile = new File("bear.jpg");
+        File brandingFile = new File("images/bear.jpg");
         Image brandingImage = new Image(brandingFile.toURI().toString());
         brandingImageView.setImage(brandingImage);
 
-        File lockFile = new File("lock.png");
+        File lockFile = new File("images/lock.png");
         Image lockImage = new Image(lockFile.toURI().toString());
         lockImageView.setImage(lockImage);
     }
 
-    public void loginButtonOnAction(ActionEvent event) throws IOException {
+    @FXML
+    public void loginButtonOnAction(ActionEvent event) {
 
         if (!usernameTextField.getText().isBlank() && !enterPasswordField.getText().isBlank()) {
-            validationLogin();
+            if (validationLogin()) {
+                loginMessageLabel.setText("Congratulation!");
+                Task<Void> task = new Task<>() {
+                    @Override
+                    protected Void call() {
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        return null;
+                    }
+                };
+                task.setOnSucceeded(new EventHandler<>() {
+                    @Override
+                    public void handle(WorkerStateEvent workerStateEvent) {
+                        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        Parent tableViewParent = null;
+                        try {
+                            window.setTitle("Welcome to IceBear!");
+                            tableViewParent = FXMLLoader.load(getClass().getResource("main.fxml"));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Scene tableViewScene = new Scene(tableViewParent);
+
+                        window.setScene(tableViewScene);
+                        window.show();
+                    }
+                });
+                new Thread(task).start();
+            } else {
+                loginMessageLabel.setText("Invalid login. Please try again.");
+            }
         } else {
-//            loginMessageLabel.setText("Please enter username and password");
-            Parent tableViewParent = FXMLLoader.load(getClass().getResource("table.fxml"));
-            Scene tableViewScene = new Scene(tableViewParent);
-
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-
-            window.setScene(tableViewScene);
-            window.show();
+            loginMessageLabel.setText("Please enter username and password");
         }
 
     }
@@ -71,12 +101,12 @@ public class LoginController implements Initializable {
         stage.close();
     }
 
-    public void validationLogin() {
+    public boolean validationLogin() {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String verifyLogin = "SELECT count(i) FROM user_account WHERE username = '" +
-                                usernameTextField.getText() + "' AND password ='" +
+        String verifyLogin = "SELECT COUNT(username) FROM user_account WHERE username = '" +
+                                usernameTextField.getText() + "' AND password = '" +
                                 enterPasswordField.getText() + "'";
 
         try {
@@ -86,16 +116,17 @@ public class LoginController implements Initializable {
 
             while (queryResult.next()) {
                 if (queryResult.getInt(1) == 1) {
-                    loginMessageLabel.setText("Congratulation!");
-                } else {
-                    loginMessageLabel.setText("Invalid login. Please try again.");
+                    return true;
                 }
             }
 
         } catch (Exception e) {
+//            System.out.println(e.getClass().getSimpleName());
             e.printStackTrace();
             e.getCause();
         }
+
+        return false;
     }
 
 }

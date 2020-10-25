@@ -12,6 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+
         primaryStage.setTitle("Ice Bear");
 //        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.initStyle(StageStyle.DECORATED);

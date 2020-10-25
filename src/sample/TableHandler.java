@@ -38,8 +38,14 @@ public class TableHandler implements Initializable {
         last_name.setCellValueFactory(new PropertyValueFactory<User, String>("last_name"));
         age.setCellValueFactory(new PropertyValueFactory<User, Integer>("age"));
 
+        lst.add(new User(2, "Nether", "Oblivion", 18));
+
         table.setItems(lst);
 
+    }
+
+    public void getUserInformation() {
+        DatabaseConnection connectNow = new DatabaseConnection();
     }
 
 }
