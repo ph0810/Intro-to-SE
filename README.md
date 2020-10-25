@@ -6,9 +6,9 @@ This Week (7, usecase)
 
 ![Preview image](/Preview%20Images/Login.png)
 
-![Preview image](/Preview%20Images/Main.png) 
+A main stage with preview features!
 
-![Preview image](/Preview%20Images/Users.png)
+![Preview image](/Preview%20Images/Main.png) 
 
 ## References
 
