@@ -75,8 +75,9 @@ public class LoginController implements Initializable {
                         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
                         Parent tableViewParent = null;
                         try {
-                            window.setTitle("Welcome to IceBear!");
-                            tableViewParent = FXMLLoader.load(getClass().getResource("main.fxml"));
+                            String title = "Welcome, " + usernameTextField.getText() + "!";
+                            window.setTitle(title);
+                            tableViewParent = FXMLLoader.load(getClass().getResource("table.fxml"));
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
