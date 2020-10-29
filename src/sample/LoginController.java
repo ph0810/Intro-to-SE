@@ -77,7 +77,7 @@ public class LoginController implements Initializable {
                         try {
                             String title = "Welcome, " + usernameTextField.getText() + "!";
                             window.setTitle(title);
-                            tableViewParent = FXMLLoader.load(getClass().getResource("table.fxml"));
+                            tableViewParent = FXMLLoader.load(getClass().getResource("updated_main.fxml"));
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
