@@ -16,5 +16,6 @@ A main stage with preview features!
   - https://www.youtube.com/watch?v=A5fQbsJ-iF8&t=930s
   - https://www.youtube.com/watch?v=XCgcQTQCfJQ
   - https://www.youtube.com/watch?v=gvBGu3mw7YU
+  - https://stackoverflow.com/questions/6710350/copying-text-to-the-clipboard-using-java
   
 Happy coding :)
