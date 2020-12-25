@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.EventFillInController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="25.0" prefWidth="25.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="25.0" prefWidth="25.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="5.0" prefHeight="25.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="25.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="170.0" prefHeight="200.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="39.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" text="Save" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+      <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Cancel" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+      <TextArea prefHeight="283.0" prefWidth="500.0" promptText="Write your description" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Citizen" wrappingWidth="91.63525390625" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="136.7294921875" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <DatePicker promptText="mm/dd/yy" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <TextField prefHeight="26.0" prefWidth="169.0" promptText="Name your event" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <TableView fx:id="table" prefHeight="400.0" prefWidth="550.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="47.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="227.0" text="Name" />
+            <TableColumn fx:id="last_name" prefWidth="26.0" />
+            <TableColumn prefWidth="113.0" text="Money" />
+            <TableColumn fx:id="age" prefWidth="114.0" text="Note" />
+         </columns>
+      </TableView>
+      <Button fx:id="switchButton" mnemonicParsing="false" onAction="#switchButtonOnAction" text="Switch event" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="General Event" GridPane.columnIndex="1">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Label text="Id" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
