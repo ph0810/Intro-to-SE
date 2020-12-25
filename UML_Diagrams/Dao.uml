@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Dao</OriginalElement>
+  <nodes>
+    <node x="81.0" y="282.5">Dao.VoluntaryEventService</node>
+    <node x="294.375" y="637.0">Dao.CitizenService</node>
+    <node x="831.0" y="334.5">Dao.CitizenDAO</node>
+    <node x="425.0" y="165.0">Dao.VE_Citizen</node>
+    <node x="364.125" y="880.0">Dao.GEService</node>
+    <node x="0.0" y="26.0">Dao.VoluntaryEventDAO</node>
+    <node x="558.4406250000001" y="0.0">Dao.DBConnection</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Dao.VoluntaryEventService" target="Dao.VoluntaryEventDAO">
+      <point x="-80.99999999999994" y="-83.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="Dao.VE_Citizen" target="Dao.DBConnection">
+      <point x="0.0" y="-201.0" />
+      <point x="617.5" y="145.0" />
+      <point x="666.8156250000001" y="145.0" />
+      <point x="-36.125" y="57.5" />
+    </edge>
+    <edge source="Dao.VoluntaryEventService" target="Dao.DBConnection">
+      <point x="81.00000000000006" y="-83.5" />
+      <point x="324.00000000000006" y="145.0" />
+      <point x="594.5656250000001" y="145.0" />
+      <point x="-108.375" y="57.5" />
+    </edge>
+    <edge source="Dao.GEService" target="Dao.CitizenService">
+      <point x="-102.0" y="-70.5" />
+      <point x="415.125" y="855.0" />
+      <point x="368.625" y="855.0" />
+      <point x="-74.25" y="96.5" />
+    </edge>
+    <edge source="Dao.CitizenService" target="Dao.DBConnection">
+      <point x="92.8125" y="-96.5" />
+      <point x="535.6875" y="607.0" />
+      <point x="820.5" y="607.0" />
+      <point x="820.5" y="145.0" />
+      <point x="739.0656250000001" y="145.0" />
+      <point x="36.125" y="57.5" />
+    </edge>
+    <edge source="Dao.CitizenService" target="Dao.VoluntaryEventService">
+      <point x="-129.9375" y="-96.5" />
+      <point x="312.9375" y="617.0" />
+      <point x="121.5" y="617.0" />
+      <point x="-121.5" y="83.5" />
+    </edge>
+    <edge source="Dao.VoluntaryEventService" target="Dao.CitizenService">
+      <point x="40.5" y="83.5" />
+      <point x="283.5" y="597.0" />
+      <point x="387.1875" y="597.0" />
+      <point x="-55.6875" y="-96.5" />
+    </edge>
+    <edge source="Dao.CitizenService" target="Dao.VE_Citizen">
+      <point x="18.5625" y="-96.5" />
+      <point x="461.4375" y="587.0" />
+      <point x="521.25" y="587.0" />
+      <point x="-96.25" y="201.0" />
+    </edge>
+    <edge source="Dao.CitizenService" target="Dao.CitizenDAO">
+      <point x="129.9375" y="-96.5" />
+      <point x="572.8125" y="617.0" />
+      <point x="962.0" y="617.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="Dao.GEService" target="Dao.DBConnection">
+      <point x="102.0" y="-70.5" />
+      <point x="619.125" y="855.0" />
+      <point x="1103.5" y="855.0" />
+      <point x="1103.5" y="135.0" />
+      <point x="811.3156250000001" y="135.0" />
+      <point x="108.37500000000001" y="57.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="463.9999999999999" y="134.28571428571422" />
+  <SelectedNodes>
+    <node>Dao.VoluntaryEventDAO</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

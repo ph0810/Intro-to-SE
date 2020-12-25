@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>View</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">View.MainController</node>
+    <node x="43.5" y="447.0">View.DatabaseConnection</node>
+    <node x="0.0" y="587.0">View.TableHandler</node>
+    <node x="0.0" y="878.0">View.Main</node>
+    <node x="421.0" y="447.0">View.EventFillInController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="View.TableHandler" target="View.DatabaseConnection">
+      <point x="-94.0" y="-123.0" />
+      <point x="94.0" y="562.0" />
+      <point x="115.75" y="562.0" />
+      <point x="-72.25" y="45.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="482.0" y="428.2857142857142" />
+  <SelectedNodes>
+    <node>View.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

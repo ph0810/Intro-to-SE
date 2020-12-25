@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Model</OriginalElement>
+  <nodes>
+    <node x="0.0" y="473.0">Model.Citizen</node>
+    <node x="606.0" y="0.0">Model.GeneralEvent</node>
+    <node x="0.0" y="0.0">Model.VoluntaryEvent</node>
+    <node x="281.0" y="0.0">Model.User</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.8313725490196079" x="421.0" y="372.5" />
+  <SelectedNodes>
+    <node>Model.Citizen</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

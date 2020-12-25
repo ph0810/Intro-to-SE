@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Controller</OriginalElement>
+  <nodes>
+    <node x="879.0" y="0.0">Controller.FamilyWorkspaceController</node>
+    <node x="1340.0" y="790.0">Controller.AddGeneralEventController</node>
+    <node x="1318.0" y="0.0">Controller.WorkspaceController</node>
+    <node x="0.0" y="972.0">Controller.EditVoluntaryEventController</node>
+    <node x="888.0" y="920.0">Controller.AddCitizenController</node>
+    <node x="22.0" y="1554.0">Controller.EditVE_Citizen</node>
+    <node x="1801.0" y="0.0">Controller.LoginController</node>
+    <node x="0.0" y="1819.0">Controller.EditGeneralEventController</node>
+    <node x="173.5" y="0.0">Controller.VE_WorkspaceController</node>
+    <node x="440.0" y="1076.0">Controller.AddVoluntaryEventController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Controller.EditVoluntaryEventController" target="Controller.VE_WorkspaceController">
+      <point x="0.0" y="-266.0" />
+      <point x="210.0" y="947.0" />
+      <point x="298.5" y="947.0" />
+      <point x="-125.0" y="461.0" />
+    </edge>
+    <edge source="Controller.AddVoluntaryEventController" target="Controller.VE_WorkspaceController">
+      <point x="0.0" y="-162.0" />
+      <point x="637.0" y="947.0" />
+      <point x="548.5" y="947.0" />
+      <point x="125.0" y="461.0" />
+    </edge>
+    <edge source="Controller.EditVE_Citizen" target="Controller.EditVoluntaryEventController">
+      <point x="0.0" y="-110.0" />
+      <point x="0.0" y="266.0" />
+    </edge>
+    <edge source="Controller.FamilyWorkspaceController" target="Controller.AddCitizenController">
+      <point x="98.5" y="435.0" />
+      <point x="1174.5" y="895.0" />
+      <point x="1170.0" y="895.0" />
+      <point x="94.0" y="-162.0" />
+    </edge>
+    <edge source="Controller.AddGeneralEventController" target="Controller.WorkspaceController">
+      <point x="0.0" y="-149.0" />
+      <point x="0.0" y="370.0" />
+    </edge>
+    <edge source="Controller.AddCitizenController" target="Controller.FamilyWorkspaceController">
+      <point x="-94.0" y="-162.0" />
+      <point x="982.0" y="895.0" />
+      <point x="977.5" y="895.0" />
+      <point x="-98.5" y="435.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="661.5714285714284" y="465.57142857142867" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
